@@ -3366,6 +3366,12 @@ input, select, textarea {
 #profile-description {
 	max-height: 240px;
 	overflow: hidden;
+	text-align: left;
+	padding-left: 15px;
+}
+
+#profile-description li {
+	text-transform: capitalize;
 }
 
 #technologies-text {
