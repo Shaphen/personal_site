@@ -2374,6 +2374,7 @@ input, select, textarea {
 
 					#header nav ul li.submenu > a {
 						text-decoration: none;
+						/* font-weight: 600; */
 					}
 
 						#header nav ul li.submenu > a:before {
@@ -3364,7 +3365,7 @@ input, select, textarea {
 
 #profile-description {
 	max-height: 240px;
-  overflow: scroll;
+	overflow: hidden;
 }
 
 #technologies-text {
