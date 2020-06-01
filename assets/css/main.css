@@ -2374,7 +2374,7 @@ input, select, textarea {
 
 					#header nav ul li.submenu > a {
 						text-decoration: none;
-						/* font-weight: 600; */
+						font-weight: 600;
 					}
 
 						#header nav ul li.submenu > a:before {
