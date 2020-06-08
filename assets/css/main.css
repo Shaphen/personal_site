@@ -1878,7 +1878,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
-
+			width: 50%;
 		}
 
 			.image.featured img {
@@ -3417,6 +3417,50 @@ input, select, textarea {
 	bottom: 82px;
 	font-size: 40px;
 	opacity: 0.6;
+}
+
+#project-header {
+	margin-bottom: 25px;
+}
+
+#project-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#project-box-switch {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#project-text {
+	width: 45%;
+}
+
+@media screen and (max-width: 700px) {
+	#project-box {
+		display: block;
+	}
+
+	#project-box-switch {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#project-text {
+		width: 100%;
+	}
+
+	.image.featured {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 736px) {
