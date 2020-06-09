@@ -1,0 +1,4 @@
+.slide-right {
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}

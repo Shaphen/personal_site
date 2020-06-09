@@ -90,7 +90,7 @@
 							</header>
 
 							<div class="row">
-								<div class="col-6 col-12-narrower slide-right">
+								<div id="first-row" class="col-6 col-12-narrower">
 									<header id="project-header">
 										<h3>Badcord</h3>
 									</header>
@@ -100,8 +100,14 @@
 											Discord-inspired fullstack single-page web application using React/Redux on the frontend with AJAX calls to a Ruby on Rails backend. Primary feature is live chat, implemented using Rails Action Cable
 										</p>
 									</section>
-
 								</div>
+								<script>
+									$(function() {
+										if ($('.row').is(':visible')) {
+											$('#first-row').addClass('slide-right')
+										}
+									});
+								</script>
 								<div class="col-6 col-12-narrower">
 
 									<header id="project-header">
