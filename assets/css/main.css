@@ -3463,6 +3463,17 @@ input, select, textarea {
 	}
 }
 
+.about-image {
+	display: block;
+	margin: 0 0 2em 0;
+	width: 100%;
+}
+
+.about-image img {
+	display: block;
+	width: 100%;
+}
+
 @media screen and (max-width: 736px) {
 
 	#profile-content {
