@@ -69,7 +69,7 @@
 									<header>
 										<h2 id="technologies-text">Learned Technologies</h2>
 									</header>
-									<ul class="featured-icons">
+									<ul id="tech-list" class="featured-icons">
 										<li><img id="image-icon2" src="images/icons/icons8-javascript-100.png"></img></li>
 										<li><span id="favicon" class="fab fa-react"></span></li>
 										<li><img id="image-icon" src="images/icons/ruby.png"></img></li>
@@ -97,33 +97,18 @@
 									</header>
 									<section id="project-box">
 										<a href="https://badcord.herokuapp.com/" target="_blank" id="first-project" class="image featured"><img id="project-image" src="images/gifs/badcord.gif" alt="" /></a>
-										<p id="project-text">
+										<p id="project-text" class="first-project-text">
 											Discord-inspired fullstack single-page web application using React/Redux on the frontend with AJAX calls to a Ruby on Rails backend. Primary feature is live chat, implemented using Rails Action Cable
 										</p>
 									</section>
 								</div>
-								<!-- <script>
-										$(window).scroll(function () {
-											$('#first-project').each(function () {
-												if ($(window).scrollTop() + $(window).height() >= $(this).position().top 
-												&& $(window).scrollTop() < $(this).position().top + $(this).height()) {
-													if (!$(this).hasClass('slide-right')) {
-														$(this).addClass('slide-right');
-													}
-												}
-												else if ($(this).hasClass('slide-right')) {
-													$(this).removeClass('slide-right');
-												}
-											});
-										});
-								</script> -->
 								<div class="col-6 col-12-narrower">
 									<header id="project-header">
 										<h3>F.L.A.M.E.</h3>
 									</header>
 									<section id="project-box-switch">
 										<a href="https://blooming-castle-18262.herokuapp.com/" target="_blank" id="second-project" class="image featured"><img id="project-image" src="images/gifs/flame.gif" alt="" /></a>
-											<p id="project-text">
+											<p id="project-text" class="second-project-text">
 												MERN stack finance app created by four engineers over the span of 5 days. Our goal was to provide an intuitive way for
 												users to track their spending habits and work towards financial independence. FLAME aims to help anyone who is
 												interested in the FIRE movement, or personal finance in general, get started on their path to financial freedom.
@@ -140,7 +125,7 @@
 									</header>
 									<section id="project-box">
 										<a href="https://shaphen.github.io/Dodge/" target="_blank" id="third-project" class="image featured"><img id="project-image" src="images/gifs/dodge.gif" alt="" /></a>
-										<p id="project-text">
+										<p id="project-text" class="third-project-text">
 											Simple and easy to play video game challenging myself to create something in a single week using only vanilla Javascript game logic, Canvas for graphics, and HTML/CSS for minor styling.
 										</p>
 									</section>
