@@ -17,3 +17,8 @@
   animation: fadeIn;
   animation-duration: 2s;
 }
+
+.fade-in-bottom {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}

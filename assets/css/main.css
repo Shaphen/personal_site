@@ -3474,6 +3474,10 @@ input, select, textarea {
 	width: 100%;
 }
 
+#about-section {
+	text-align: center;
+}
+
 @media screen and (max-width: 736px) {
 
 	#profile-content {
