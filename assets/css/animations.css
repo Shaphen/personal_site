@@ -2,3 +2,8 @@
   animation: fadeInLeft;
   animation-duration: 1s;
 }
+
+.slide-left {
+  animation: fadeInRight;
+  animation-duration: 1s;
+}

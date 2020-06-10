@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animations.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="index is-preload">
@@ -90,26 +91,33 @@
 							</header>
 
 							<div class="row">
-								<div id="first-row" class="col-6 col-12-narrower">
+								<div class="col-6 col-12-narrower">
 									<header id="project-header">
 										<h3>Badcord</h3>
 									</header>
 									<section id="project-box">
-										<a href="https://badcord.herokuapp.com/" target="_blank" class="image featured"><img id="project-image" src="images/gifs/badcord.gif" alt="" /></a>
+										<a href="https://badcord.herokuapp.com/" target="_blank" id="first-project" class="image featured"><img id="project-image" src="images/gifs/badcord.gif" alt="" /></a>
 										<p id="project-text">
 											Discord-inspired fullstack single-page web application using React/Redux on the frontend with AJAX calls to a Ruby on Rails backend. Primary feature is live chat, implemented using Rails Action Cable
 										</p>
 									</section>
 								</div>
-								<script>
-									$(function() {
-										if ($('.row').is(':visible')) {
-											$('#first-row').addClass('slide-right')
-										}
-									});
-								</script>
+								<!-- <script>
+										$(window).scroll(function () {
+											$('#first-project').each(function () {
+												if ($(window).scrollTop() + $(window).height() >= $(this).position().top 
+												&& $(window).scrollTop() < $(this).position().top + $(this).height()) {
+													if (!$(this).hasClass('slide-right')) {
+														$(this).addClass('slide-right');
+													}
+												}
+												else if ($(this).hasClass('slide-right')) {
+													$(this).removeClass('slide-right');
+												}
+											});
+										});
+								</script> -->
 								<div class="col-6 col-12-narrower">
-
 									<header id="project-header">
 										<h3>F.L.A.M.E.</h3>
 									</header>
@@ -184,6 +192,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/animations.js"></script>
 
 	</body>
 </html>
