@@ -72,12 +72,23 @@ $(window).scroll(function () {
 
   $('#tech-list').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top // if window bottom position is greater than ele top positon
-      && $(window).scrollTop() < $(this).position().top + $(this).height()) { // if window top position is less than ele bottom positon
+    && $(window).scrollTop() < $(this).position().top + $(this).height()) { // if window top position is less than ele bottom positon
       if (!$(this).hasClass('fade-in')) {
         $(this).addClass('fade-in');
       }
     } else {
       $(this).removeClass('fade-in');
+    }
+  });
+
+  $('#tech-list2').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top // if window bottom position is greater than ele top positon
+      && $(window).scrollTop() < $(this).position().top + $(this).height()) { // if window top position is less than ele bottom positon
+      if (!$(this).hasClass('fade-in-slower')) {
+        $(this).addClass('fade-in-slower');
+      }
+    } else {
+      $(this).removeClass('fade-in-slower');
     }
   });
 });
