@@ -3483,6 +3483,26 @@ input, select, textarea {
 	align-items: center;
 }
 
+#git-link, #linked-link, #resume-link {
+	margin-bottom: 10px;
+	border-radius: 10px;
+	transition: border-radius 0.5s;
+}
+
+#git-link:hover {
+	border-radius: 0px;
+}
+
+#linked-link:hover {
+	border-radius: 0px;
+}
+
+#resume-link:hover {
+	border-radius: 0px;
+}
+
+
+
 @media screen and (max-width: 736px) {
 
 	#profile-content {

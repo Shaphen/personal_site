@@ -85,4 +85,34 @@ $(window).scroll(function () {
       $(this).removeClass('fade-in-bottom');
     }
   });
+
+  $('#git-link').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+
+  $('#linked-link').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+
+  $('#resume-link').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
 });
