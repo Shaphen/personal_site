@@ -76,8 +76,28 @@ $(window).scroll(function () {
     }
   });
 
-  $('#about-section').each(function () {
+  $('#about-section1').each(function () {
     if($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+
+  $('#about-section2').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+
+  $('#about-section3').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
       && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
       $(this).addClass('fade-in-bottom');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
@@ -88,31 +108,31 @@ $(window).scroll(function () {
 
   $('#git-link').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
-      $(this).addClass('fade-in-bottom');
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('zoom'))) {
+      $(this).addClass('zoom');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
-      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
-      $(this).removeClass('fade-in-bottom');
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('zoom')) {
+      $(this).removeClass('zoom');
     }
   });
 
   $('#linked-link').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
-      $(this).addClass('fade-in-bottom');
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('zoom'))) {
+      $(this).addClass('zoom');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
-      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
-      $(this).removeClass('fade-in-bottom');
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('zoom')) {
+      $(this).removeClass('zoom');
     }
   });
 
   $('#resume-link').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
-      $(this).addClass('fade-in-bottom');
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('zoom'))) {
+      $(this).addClass('zoom');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 600
-      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
-      $(this).removeClass('fade-in-bottom');
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('zoom')) {
+      $(this).removeClass('zoom');
     }
   });
 });

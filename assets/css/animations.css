@@ -22,3 +22,8 @@
   animation: fadeInUp;
   animation-duration: 1s;
 }
+
+.zoom {
+  animation: zoomIn;
+  animation-duration: 1s;
+}
