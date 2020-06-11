@@ -3436,6 +3436,30 @@ input, select, textarea {
 	width: 100%;
 }
 
+#first-project {
+	transition: all 0.3s;
+}
+
+#first-project:hover {
+	transform: scale(1.05);
+}
+
+#second-project {
+	transition: all 0.3s;
+}
+
+#second-project:hover {
+	transform: scale(1.05);
+}
+
+#third-project {
+	transition: all 0.3s;
+}
+
+#third-project:hover {
+	transform: scale(1.05);
+}
+
 #about-section {
 	text-align: center;
 }
@@ -3478,6 +3502,10 @@ input, select, textarea {
 
 #about-me-title {
 	margin-bottom: 15px;
+}
+
+#email-footer {
+	padding: 8px 0px;
 }
 
 @media screen and (max-width: 736px) {
