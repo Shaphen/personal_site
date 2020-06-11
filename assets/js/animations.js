@@ -1,4 +1,24 @@
 $(window).scroll(function () {
+  $('#what-now1').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+
+  $('#what-now2').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
+      $(this).addClass('fade-in-bottom');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
+      $(this).removeClass('fade-in-bottom');
+    }
+  });
+  
   $('#first-project').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
       && $(window).scrollTop() < $(this).position().top + $(this).height()) {
@@ -75,7 +95,7 @@ $(window).scroll(function () {
       $(this).removeClass('fade-in-slower');
     }
   });
-
+  
   $('#about-section1').each(function () {
     if($(window).scrollTop() + $(window).height() >= $(this).position().top
       && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
