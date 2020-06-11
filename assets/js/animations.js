@@ -1,21 +1,21 @@
 $(window).scroll(function () {
   $('#what-now1').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
-      $(this).addClass('fade-in-bottom');
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-about'))) {
+      $(this).addClass('fade-in-about');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
-      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
-      $(this).removeClass('fade-in-bottom');
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-about')) {
+      $(this).removeClass('fade-in-about');
     }
   });
 
   $('#what-now2').each(function () {
     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-bottom'))) {
-      $(this).addClass('fade-in-bottom');
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fade-in-about'))) {
+      $(this).addClass('fade-in-about');
     } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
-      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-bottom')) {
-      $(this).removeClass('fade-in-bottom');
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fade-in-about')) {
+      $(this).removeClass('fade-in-about');
     }
   });
   

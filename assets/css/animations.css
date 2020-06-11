@@ -13,6 +13,11 @@
   animation-duration: 2s;
 }
 
+.fade-in-about {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
 .fade-in-slower {
   animation: fadeIn;
   animation-duration: 2s;
