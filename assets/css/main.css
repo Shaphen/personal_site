@@ -3437,6 +3437,33 @@ input, select, textarea {
 	width: 100%;
 }
 
+#tech-list, #tech-list2 {
+	position: relative;
+	z-index: 1;
+	padding-top: 25px;
+}
+
+#tech-list-item {
+	position: relative;
+}
+
+#skill-name {
+	display: none;
+	margin: 0;
+	color: black;
+	font-weight: 600;
+	position: absolute;
+	top: -27px;
+	width: 100%;
+  text-align: center;
+}
+
+#tech-list-item:hover #skill-name {
+	display: block;
+	animation: fadeInUp;
+	animation-duration: 0.3s;
+}
+
 #first-project {
 	transition: all 0.3s;
 }
