@@ -3494,8 +3494,26 @@ input, select, textarea {
 
 #footer-contact {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+#git-footer {
+	width: 50%;
+  text-align: right;
+}
+
+#linked-footer {
+	width: 50%;
+  text-align: left;
+}
+
+#resume-footer {
+	width: 100%;
+}
+
+#git-link, #linked-link {
+	width: 50%;
 }
 
 #git-link, #linked-link, #resume-link {
@@ -3533,6 +3551,7 @@ input, select, textarea {
 }
 
 #email-footer {
+	width: 100%;
 	padding: 8px 0px;
 }
 
