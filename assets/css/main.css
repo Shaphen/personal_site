@@ -3328,7 +3328,9 @@ input, select, textarea {
 #profile-description {
 	max-height: 240px;
 	overflow: hidden;
-	text-align: left;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
 	padding-left: 15px;
 }
 
