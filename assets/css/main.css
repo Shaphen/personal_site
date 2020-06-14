@@ -3434,22 +3434,32 @@ input, select, textarea {
 #tech-list, #tech-list2 {
 	position: relative;
 	z-index: 1;
-	padding-top: 25px;
+	padding-top: 27px;
 }
 
 #tech-list-item {
 	position: relative;
 }
 
+#skill-box {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	top: -27px;
+	text-align: center;
+}
+
 #skill-name {
 	display: none;
+	/* background: rgba(255, 255, 255, 0.9); */
+	background: #649e97;
+	width: fit-content;
+	padding: 0px 8px;
+	border-radius: 5px;
 	margin: 0;
-	color: black;
+	color: white;
 	font-weight: 600;
-	position: absolute;
-	top: -27px;
-	width: 100%;
-  text-align: center;
 }
 
 #tech-list-item:hover #skill-name {
