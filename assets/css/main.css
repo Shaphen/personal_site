@@ -3360,15 +3360,9 @@ input, select, textarea {
 	border-radius: 8px;
 }
 
-#social-link {
+.social-link {
 	font-size: 35px;
 	color: white;
-	opacity: 0.5;
-	transition: opacity 0.5s;
-}
-
-#social-link:hover {
-	opacity: 1;
 }
 
 #about-img {
@@ -3513,21 +3507,23 @@ input, select, textarea {
 }
 
 #git-link, #linked-link {
-	width: 50%;
+	width: 100%;
+	margin: 10px;
+	width: 30px;
+  border: none;
+	opacity: 0.5;
+	transition: all 0.5s;
 }
 
-#git-link, #linked-link, #resume-link {
-	margin-bottom: 10px;
+#git-link:hover, #linked-link:hover {
+	opacity: 1;
+}
+
+#resume-link {
+	margin: 10px;
+	width: 30px;
 	border-radius: 10px;
 	transition: border-radius 0.5s;
-}
-
-#git-link:hover {
-	border-radius: 0px;
-}
-
-#linked-link:hover {
-	border-radius: 0px;
 }
 
 #resume-link:hover {
