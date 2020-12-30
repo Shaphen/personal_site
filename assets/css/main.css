@@ -3432,6 +3432,7 @@ input, select, textarea {
 }
 
 #tech-list, #tech-list2 {
+	display: flex;
 	position: relative;
 	z-index: 1;
 	padding-top: 27px;
@@ -3569,5 +3570,9 @@ input, select, textarea {
 
 	#what-now-description {
 		padding: 10px 30px;
+	}
+
+	#tech-list, #tech-list2 {
+		display: contents;
 	}
 }
